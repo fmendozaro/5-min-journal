@@ -29,6 +29,10 @@ public class UserSvc {
         userRepo.deleteById(id);
     }
 
+    public void deleteAll(){
+        userRepo.deleteAll();
+    }
+
     public User findByUsername(String username){ return userRepo.findByUsername(username); }
 
 }
